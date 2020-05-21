@@ -1,0 +1,10 @@
+# compiled output
+/node_modules
+.nyc*
+.vscode
+coverage
+customer-api
+/dist
+**.DS_Store**
+
+

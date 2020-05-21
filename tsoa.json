@@ -1,0 +1,83 @@
+{
+  "swagger": {
+    "basePath": "/",
+    "entryFile": "./src/bootstrap.ts",
+    "specVersion": 3,
+    "outputDirectory": "./src",
+    "controllerPathGlobs": ["./src/controller/**/*"]
+  },
+  "routes": {
+    "basePath": "/",
+    "entryFile": "./src/bootstrap.ts",
+    "routesDir": "./src/",
+    "middleware": "express",
+    "middlewareTemplate": "",
+    "authenticationModule": "./src/config/authentication.ts",
+    "iocModule": "./src/config/inversify.config.ts"
+  },
+  "decoratorsSchema": {
+    "controllersDecorators": [
+      {
+        "name": "Route",
+        "tsoaDecorator": "Route"
+      },
+      {
+        "name": "Controller",
+        "tsoaDecorator": "Route"
+      },
+      {
+        "name": "JsonController",
+        "tsoaDecorator": "Route"
+      }
+    ],
+    "methodDecorators": [
+      {
+        "name": "get",
+        "tsoaDecorator": "get"
+      },
+      {
+        "name": "post",
+        "tsoaDecorator": "post"
+      },
+      {
+        "name": "patch",
+        "tsoaDecorator": "patch"
+      },
+      {
+        "name": "delete",
+        "tsoaDecorator": "delete"
+      },
+      {
+        "name": "put",
+        "tsoaDecorator": "put"
+      }
+    ],
+    "parameterDecorators": [
+      {
+        "name": "Request",
+        "tsoaDecorator": "Request"
+      },
+      {
+        "name": "Body",
+        "tsoaDecorator": "Body"
+      },
+      {
+        "name": "BodyProp",
+        "tsoaDecorator": "BodyProp"
+      },
+      {
+        "name": "Header",
+        "tsoaDecorator": "Header"
+      },
+      {
+        "name": "Query",
+        "tsoaDecorator": "Query"
+      },
+      {
+        "name": "Param",
+        "tsoaDecorator": "Path"
+      }
+    ]
+  }
+
+}

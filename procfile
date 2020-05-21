@@ -1,0 +1,15 @@
+#!/bin/sh
+
+cd /www
+
+echo "You are deploying in ${PLATFORM} environment"
+
+sed -i "s!mongodb_host!${MONGODB_HOST}!g" environment/.env.prod
+sed -i "s!mongodb_port!${MONGODB_PORT}!g" environment/.env.prod
+sed -i "s!mongodb_username!${MONGODB_USER}!g" environment/.env.prod
+sed -i "s!mongodb_passkey!${MONGODB_KEY}!g" environment/.env.prod
+sed -i "s!mongodb_db!${MONGODB_DB}!g" environment/.env.prod
+
+npm run build
+npm run webpack:prod --verbose
+npm run start:prod --verbose
