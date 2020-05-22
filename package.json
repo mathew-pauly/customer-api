@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Customer API with Node JS, Express, Typescript",
     "main": "bootstrap.js",
-    "repository": "#",
+    "repository": "https://github.com/mathew-pauly/customer-api",
     "scripts": {
         "start-nodemon": "NODE_ENV=localhost nodemon dist/bootstrap.js",
         "tsc": "tsc -p src",
@@ -41,7 +41,7 @@
         ],
         "all": true
     },
-    "author": "OPTUM",
+    "author": "Mathew Pauly",
     "license": "MIT",
     "dependencies": {
         "body-parser": "1.19.0",

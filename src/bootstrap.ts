@@ -19,7 +19,7 @@ import * as trace from 'stack-trace';
 //@injectable()
 export class Server{
     public TARGET_NAME = "Server";
-    port:number;
+    port:any;
     server: any;
 
     log:ILogger = iocContainer.get<ILogger>(TYPES.Logger);
@@ -28,7 +28,7 @@ export class Server{
     constructor(){
         this.log.setName(this.TARGET_NAME); 
         this.log.configLogger();
-        this.port = 8089;
+        this.port = process.env.PORT;
         this.init();
         
     }

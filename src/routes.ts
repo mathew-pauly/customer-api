@@ -174,10 +174,6 @@ export function RegisterRoutes(app: express.Express) {
                     return validationService.ValidateParam(args[key], request.body[name], name, fieldErrors, 'body.', { "controllerPathGlobs": ["./src/controller/**/*"], "specVersion": 3 });
             }
         });
-
-        // if (Object.keys(fieldErrors).length > 0) {
-        //     throw new ValidateError(fieldErrors, '');
-        // }
         return values;
     }
 

@@ -81,10 +81,5 @@
 				]
 			}
 		}
-	},
-	"servers": [
-		{
-			"url": "http://localhost:8089/"
-		}
-	]
+	}
 }

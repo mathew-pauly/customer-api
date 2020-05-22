@@ -26,7 +26,6 @@ export class DbConnection implements IDbConnection{
             const passkey = env.parsed[CloudEnvironment.MONGODB_PASSKEY];
             const db = env.parsed[CloudEnvironment.MONGODB_DB];
             const uri=`mongodb+srv://${username}:${passkey}@${host}/${db}`;
-            console.log(uri)
             const _db = await MongoClient.connect(uri,options);
             return _db.db(db);
         } catch (e) {
