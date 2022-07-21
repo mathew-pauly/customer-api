@@ -63,7 +63,7 @@
         "splunk-logging": "0.10.1",
         "stack-trace": "0.0.10",
         "swagger-ui-express": "4.1.2",
-        "terser": "4.4.0",
+        "terser": "4.8.1",
         "terser-webpack-plugin": "2.2.1",
         "tsoa": "2.5.9",
         "webpack": "4.41.0"
