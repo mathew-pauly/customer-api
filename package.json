@@ -97,7 +97,7 @@
         "tslint": "^5.10.0",
         "typescript": "3.5.1",
         "vinyl-fs": "3.0.3",
-        "webpack-cli": "3.3.9",
+        "webpack-cli": "3.3.12",
         "winston": "3.0.0"
     }
 }
